@@ -1,0 +1,18 @@
+.round-sm-cus {
+  width: 800px;
+  height: 800px;
+  opacity: 0.5;
+  background: linear-gradient(180deg, #D0FFD4 0%, #E2FFE4 100%);
+  filter: blur(10px);
+  border-radius: 50%;
+  @include media-breakpoint-down(md) {
+    width: 400px;
+    height: 400px;
+  }
+}
+.round-sm-cus-absolute {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}

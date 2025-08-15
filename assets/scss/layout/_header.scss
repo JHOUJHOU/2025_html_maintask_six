@@ -1,0 +1,75 @@
+.person-mokumaru {
+    width: 44px;
+    height: 44px;
+}
+.logo-img {
+    @include media-breakpoint-down(md) {
+        width: 92px;
+        height: 35.61px;
+    }
+}
+// 漢堡選單
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+// 隱藏原本漢堡線條
+.navbar-toggler-icon {
+    display: none;
+}
+// 三條線
+.hamburger {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #333;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+.hamburger span:nth-child(2) {
+    top: 7px;
+    transform-origin: left center;
+}
+.hamburger span:nth-child(3) {
+    top: 14px;
+    transform-origin: left center;
+}
+// 展開時 X 效果
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px;
+    left: 6px;
+}
+.hamburger.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 16px;
+    left: 6px;
+}
+
+.login-btn:hover {
+    background: $natural-200;
+    border: none;
+}

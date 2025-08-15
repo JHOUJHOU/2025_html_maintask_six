@@ -1,0 +1,21 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+a {
+	display: block;
+	text-decoration: none;
+	color: #212529;
+}
+img {
+	max-width: 100%;
+	height: auto;
+  vertical-align: middle;
+}
+body {
+	font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+  font-weight: $font-weight-medium;
+	font-size: $font-size-base;
+	letter-spacing: 0.02em;
+	line-height: $line-height-base;
+  color: $natural-800;
+}

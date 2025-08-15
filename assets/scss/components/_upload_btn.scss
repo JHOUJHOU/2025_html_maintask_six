@@ -1,0 +1,23 @@
+// custom upload
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+}
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  opacity: 0;           
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10; 
+}
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: $white;
+  border: 1px solid $natural-300;
+  border-radius: 16px;  
+  cursor: pointer;
+}

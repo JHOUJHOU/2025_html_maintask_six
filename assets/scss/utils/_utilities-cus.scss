@@ -1,0 +1,29 @@
+.border-content {
+  border-top: 1px solid #D1D9E1; 
+  border-bottom: 1px solid #D1D9E1;
+}
+.card-box-shadow {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.12);
+}
+.navbar-item-pb {
+  padding-bottom: 0px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 445px;
+  }
+}
+.rounded-cus-1 {
+  border-top-right-radius: 12px;
+}
+.rounded-cus-2 {
+  border-radius: 12px 0 12px 0;
+}
+.step-spacer {
+  padding: 10.5px 16px;
+  @include media-breakpoint-down(md) {
+    padding: 9px 16px;
+  }
+}
+.qa-img-spacer {
+  margin-left: 50.42px;
+  margin-bottom: 40px;
+}
